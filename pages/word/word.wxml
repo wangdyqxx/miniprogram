@@ -1,0 +1,29 @@
+<!--pages/word/word.wxml-->
+<text class='textp'>身份证照片</text>
+<text class='textpp'>驾驶证照片</text>
+<form catchsubmit="formSubmit">
+  <view class='photo'>
+    <image class='ph' src='{{file1}}' id="1" bindtap='touchphoto' mode='aspectFit'></image>
+    <image class='ph' src='{{file2}}' id="2" bindtap='touchphoto' mode='aspectFit'></image>
+    <image class='phright' src='{{file3}}' id="3" bindtap='touchphoto' mode='aspectFit'></image>
+  </view>
+
+  <text class='text'>正面</text>
+  <text class='text2'>反面</text>
+  <text class='text3'>人像面</text>
+
+  <view >
+        <button class="btn1" type="primary" formType="submit">
+          Submit
+        </button>
+        <button class="btn1" formType="reset">
+          Reset
+        </button>
+  </view>
+
+  <!-- <button class='btn1' open-type='openSetting'>
+      <image class='btnImg' src='../images/wechat.png'></image>
+      <view>确定</view>
+  </button> -->
+</form>
+

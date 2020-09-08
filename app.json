@@ -1,0 +1,39 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/word/word",
+    "pages/logs/logs"
+  ],
+  "window":{
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTextStyle":"black",
+    "navigationBarTitleText": "小工具",
+    "backgroundColor": "#eeeeee",
+    "backgroundTextStyle":"light"
+  },
+  "tabBar": {
+    "list": [{
+      "pagePath": "pages/index/index",
+      "text": "首页"
+    }, 
+    {
+      "pagePath": "pages/word/word",
+      "text": "word"
+    }, 
+    {
+      "pagePath": "pages/logs/logs",
+      "text": "日志"
+    }
+  ]
+  },
+  "networkTimeout": {
+    "request": 10000,
+    "downloadFile": 10000
+  },
+  "navigateToMiniProgramAppIdList": [
+    "wxba2a6f9d445e7ea2"
+  ],
+  "style": "v2",
+  "sitemapLocation": "sitemap.json",
+  "debug": true
+}
