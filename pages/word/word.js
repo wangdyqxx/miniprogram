@@ -4,13 +4,13 @@ import { send_photo } from "../../utils/util.js";
 Page({
   data: {
     serverUri:'https://wangdy.xyz',
-    file1: "../images/111.jpeg",
-    file2: "../images/111.jpeg",
+    file1: "",
+    file2: "",
     file3: ""
   },
   formSubmit: function (e) {
     // , this.data.photos2, this.data.photos3
-    var files = [this.data.file1]
+    var files = [this.data.file1, this.data.file2, this.data.file3]
     send_photo(this.data.serverUri, files, function (res) {
       console.log("res:",res)
     })

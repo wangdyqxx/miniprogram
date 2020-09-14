@@ -18,9 +18,12 @@ function send_photo(uri, data, successfun) {
   for (let i = 0; i < data.length; i++) {
     console.log("data:", data[i])
     wx.uploadFile({
-      url: uri,
-      filePath: data[i] + "",
-      name: 'file',
+      url: uri+"/tool/files/file",
+      filePath: ""+data[i],
+      name: "file",
+      formData:{
+        "key":"value",
+      },
       success: function (res) {
         successfun(res)
       },
